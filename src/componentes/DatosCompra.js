@@ -1,8 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import axios from "axios";
+
+
 export default function DatosCompra() {
+
+  useEffect(()=> {
+    axios.post('https://gamanapp-back.herokuapp.com/payment/new', {
+      name: 'Moriarty',
+      price: 'Sherlock'
+  }).then(response => {
+      console.log(response)
+  }).catch(e => {
+      console.log(e);
+  });
+  },[])
   return (
     <div className="fondoResumen">
        
