@@ -36,9 +36,7 @@ import EditarFactura from "./tablas/EditarFactura"
 import News from "./componentes/News"
 import Resumen from "./componentes/Resumen"
 import ThemeContext from "./context/ContextoGeneral"
-import Server from "./server"
-import PaymentController from "./controllers/PaymentController"
-import PaymentService from "./services/PaymentService"
+
 function App() {
   return (
     <div>
@@ -76,8 +74,8 @@ function App() {
             <Route path="/editarFactura/:id" component={EditarFactura}/>
             <Route path="/news" component={News}/>
             <Route path="/resumen" component={Resumen}/>
-            <Route path="/webhook" component={PaymentService}/>
-            <Route path="/payment/new" component={PaymentController}/>
+           
+          
             </ThemeContext>
           </Router>
           
