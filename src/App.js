@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "font-awesome/css/font-awesome.min.css";
 
@@ -40,7 +40,7 @@ import ThemeContext from "./context/ContextoGeneral"
 function App() {
   return (
     <div>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
                
           <ThemeContext>
             <Route path="/" exact component={Bienvenida}/>
