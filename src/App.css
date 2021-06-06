@@ -1,0 +1,2982 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./recursos/doodle.jpg");
+  background-attachment: fixed;
+}
+.controlBar{
+  background-color: white;
+  position: fixed;
+}
+.solito{
+  color: #320b10;
+  font-family: "Luckiest guy";
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10% ;
+}
+.botonDcerrar{
+  padding: 5px;
+  background-color: #320b10;
+  width: 40px;
+  position: absolute;
+}
+.botonDcerrar i{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+.t{
+ 
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  top: 0px; 
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.s{
+  width: 30%;
+ 
+}
+.buscadorB{
+
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 25px;
+  display: block;
+}
+.buscadorB input[type=search]{
+  background-color: green;
+  width: 80%;
+  background-color: white;
+  height: 50px;
+}
+.carrouselB{
+   position: inherit;
+  width: 70%;
+  left: 0px;
+}
+.w{
+
+  position: absolute;
+  top: 0px;
+}
+.pixel{
+  width: 50px;
+}
+@keyframes entrada1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  
+}
+.refrescar p{
+  background: #320b10;
+  padding: 10px;
+  color: white;
+  font-family: "itim";
+  font-weight: bold;
+  text-align: center;
+}
+.refrescar p:hover{
+  background: rosybrown;
+  cursor: pointer;
+}
+/*productos list*/
+.precio{
+  text-align: center;
+  margin: 5px;
+}
+.precio p{
+  font-family: "itim";
+  color: #320b10;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navegacion{
+  position: fixed;
+  border-radius: 10px;
+  z-index: 200;
+  width: 70px;
+ 
+}
+.contenedorCarritoWish{
+  position: absolute;
+  border-radius: 10px;
+  margin: 15px;
+  right: 100px;
+  top: 30%;
+  z-index: 200;
+}
+.contenedorWicon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0px;
+  z-index:9999999;
+}
+
+.Wicons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 10%;
+  right: 5px;
+  
+}
+.Wicons img{
+  width: 50px;
+  margin: 10px;
+  z-index:9999999;
+}
+
+.containerIcon{
+  display: flex;
+  margin: 0 auto;
+  
+}
+.containerIcon img{
+  width: 200px;
+
+}
+.Wicons{
+  display: flex;
+  flex-direction: column;
+   margin-top: 10;
+   position: fixed;
+   z-index: 999;
+}
+.Wicons img{
+  width: 70px;
+  margin: 10px;
+}
+
+.contenedorCarritoWishB{
+  position: absolute;
+  border-radius: 10px;
+  margin: 15px;
+  right: 100px;
+  top: 30%;
+  z-index: 200;
+}
+
+
+
+.iconb {
+ 
+  margin: 20px;
+  width: 70px;
+  color: #5e2129;
+  text-decoration: none;
+  font-size: 3rem;
+  transition: font-size 0.5s;
+}
+.iconb:hover{
+  font-size:4rem ;
+}
+.header {
+  background-color: #5e2129;
+  padding: 10px;
+  
+}
+.contenedor-icon {
+  position: fixed;
+  border-radius: 10px;
+  margin: 15px;
+  right: 0px;
+  top: 0px;
+  z-index: 200;
+}
+.contenedor-icon:hover {
+  cursor: pointer;
+}
+.icon {
+  margin: 5px;
+  display: inline;
+  color: #5e2129;
+  text-decoration: none;
+  
+}
+
+
+.contenedor-icon2 {
+  position: static;
+  border-radius: 10px;
+  margin: 15px;
+  right: 25px;
+}
+.contenedor-icon2:hover {
+  cursor: pointer;
+}
+.icon2 {
+  font-size: 40px;
+  margin-top: -40px;
+  margin-right: 20px;
+  position: absolute;
+  display: inline;
+  color: white;
+}
+
+.contenedorLogo{
+  background-color: rosybrown;
+ width: 90%;
+ border-bottom-left-radius: 50px;
+ border-bottom-right-radius: 50px;
+ margin-top: -20px;
+ margin-left: 20px;
+ margin-right: 20px;
+
+
+}
+.interLogo{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ align-content: center;
+ padding-top: 5%;
+}
+.contenedorTexto{
+  position: relative;
+  margin: auto;
+  margin-top: 15%;
+  
+}
+
+.contenedor-hojas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.hoja {
+  width: 50px;
+  margin: 10px;
+  animation: hox 1s infinite;
+  margin-left: 40%;
+}
+.hoja2 {
+  width: 50px;
+  margin: 10px;
+  animation: ho 1s infinite;
+}
+.contenedor-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ margin-top: 13px;
+  
+}
+.contenedor-name p{
+  line-height: 1.5rem;
+}
+.contenedor-name p:first-child{
+  font-family: "Luckiest guy";
+  color: white;
+  font-size: 4rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+.contenedor-name p:nth-child(2){
+  font-family: "quicksand";
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+@keyframes hox {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+@keyframes ho {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.advice{
+ display: none;
+ 
+
+}
+.advice img{
+ display: flex;
+ align-self: center;
+
+}
+@keyframes ac {
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0px)
+  }
+}
+.advice p{
+  color: rosybrown;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 20px;
+  font-family: "quicksand";
+  text-align: center;
+  font-weight: bolder;
+ 
+}
+.logo {
+  width: 250px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+.image {
+  width:60%;
+  animation: jump 3s infinite;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  
+  
+  
+}
+
+.texto {
+  color: #5e2129;
+  display: inline;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+@keyframes jump {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: 13px;
+  }
+  100%{
+    margin-top: 0px ;
+  }
+  
+}
+
+.menu {
+  position: fixed;
+  width: 50vw;
+  min-height: 100vh;
+  background-color: white;
+  z-index: 100;
+
+  animation: appear .5s ease-in-out;
+  top: 0px;
+  padding-top: 30px;
+  flex: 1;
+  right: 0px;
+  bottom: 0px;
+}
+
+@keyframes appear {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+.lista {
+  margin-top: 15px;
+}
+.items {
+  color: #320b10;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  margin-left: 20px;
+  font-family: "itim";
+
+}
+
+.opciones-contenedor {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+.opciones-contenedor:hover {
+  background: url("./recursos/hojita.png");
+  background-repeat: repeat;
+  background-position: right;
+  text-transform: capitalize;
+  cursor: pointer;
+  
+}
+.hover-menu {
+  width: 60px;
+  height: 60px;
+  visibility: hidden;
+}
+
+/*PRODUCTOS*/
+.contenedor-productos{
+  width: 100vw;
+  margin-top: -25%;
+  animation: entrada 1s ease;
+  background-color: rosybrown;
+
+
+}
+
+.productos{
+  padding-top: 30%;
+
+}
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  
+}
+.containerIcon{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+
+  margin: 0 auto;
+  overflow: hidden;
+}
+.textoProducto{
+  background-color: white;
+}
+.textoProducto p{
+  color: #320b10;
+  font-family: "Luckiest guy";
+  text-transform: uppercase;
+  text-align: center;
+}
+.containerIcon img {
+  width: 350px;
+  height: 350px;
+ opacity: 1;
+ overflow: hidden;
+
+}
+.containerIcon img:hover{
+ opacity: .8;
+
+}
+
+@keyframes moving {
+  0%{
+   transform: rotate(-10deg);
+  }50%{
+   transform: rotate(10deg);
+  }100%{
+    transform: rotate(-10deg);
+  }
+  
+}
+.icon-d {
+  margin: 34px;
+  width: 200px;
+  
+  animation: moving 3s infinite;
+}
+
+.contenedorCarritoWishP{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+ 
+}
+.WiconsP{
+   display: flex;
+  flex-direction: column;
+   right: 8%;
+   margin-top: 15%;
+}
+.WiconsP img{
+  width: 70px;
+  margin: 10px;
+}
+/*OFERTAS*/
+
+
+.contenidoR {
+
+  width: 100vw;
+  margin: 0px auto;
+  animation: entrada3 1s ease;
+}
+
+@keyframes entrada3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  
+}
+.cajaimagenes{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+
+.imagenO {
+  width: 100%;
+  margin: 5%;
+ 
+}
+
+.container{
+  margin-left: 10px;
+  background-color: white;
+  width: 50vw;
+  padding: 10px;
+
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 50vw;
+  height: 500px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+ 
+}
+
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.men{
+  text-align: center;
+  margin: 20px;
+}
+
+.men li{
+  display: inline-block;
+  text-align: center;
+}
+
+.men li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+/*INFORMACION*/
+
+.back{
+  width: 100%;
+  height: 500px;
+  padding: 5%;
+  animation: entrada4 1s ease;
+  
+  
+}
+@keyframes entrada4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+}
+.fond{
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  
+}
+.fond img{
+  width: 85%;
+  
+}
+
+.back p{
+ color: white;
+ font-size: 5rem;
+ font-family: "quicksand";
+ text-align: center;
+}
+/*SERVICIOS*/
+.containerServicio{
+  animation: entrada5 1s ease;
+  background-color: rosybrown;
+  padding-bottom: 10%;
+  width: 100vw;
+  
+}
+@keyframes entrada5 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+}
+.cajita {
+  background-color: rosybrown;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding-top: 6%;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.envio{
+ width: 300px;
+ margin: 10px;
+ background-color: white;
+ padding: 10px;
+}
+
+.pago{
+ width: 300px;
+ margin: 10px;
+ background-color: white;
+ padding: 10px;
+}
+.legal{
+ width: 300px;
+ margin: 10px;
+ background-color: white;
+ padding: 10px;
+}
+.servicio {
+  width: 100%;
+}
+.serviciox{
+  width: 100%;
+  margin-left: 40px;
+}
+.servicioy{
+  width: 100%;
+  margin-top: 40px;
+}
+/*peluches*/
+.tituloC{
+  background-color: #320b10;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+ 
+}
+.tituloC p{
+  font-size: 4rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  text-align: center;
+}
+.itemsC{
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
+  
+}
+.buscadorC{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+input[type=search]{
+ padding: 20px;
+ width: 70%;
+ border-radius: 10px;
+ border: none;
+ background-color: rgba(231, 154, 198, 0.254);
+ 
+}
+
+.iconoc{
+ margin-left: -43px; 
+ margin-top: 8px;
+ font-size: 36px;
+color: #5e2129;
+}
+.iconoc:hover{
+  color: #320b10;
+  cursor: pointer;
+}
+
+.iconh{
+  font-size: 3rem;
+  transition: transform 1s ease;
+  color: #a33d4b;
+  margin-top: -15px;
+
+  
+}
+.iconh:hover{
+  color: lightcoral;
+  cursor:pointer;
+  transform: rotate(360deg);
+} 
+.padreItems{
+  background-color:white;
+  height: 100%;
+  bottom: 0px;
+  background-attachment: fixed;
+}
+.conjunto{
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  margin: 30px auto;
+  padding: 10px;
+  -webkit-box-shadow: -6px 7px 21px 1px #969696; 
+box-shadow: -6px 7px 21px 1px #969696;
+}
+.imagenc{
+  width: 270px;
+  height: 270px;
+  background-color: white;
+  overflow: hidden;
+}
+.imagenc img{
+  width: 100%;
+  margin: 0px;
+}
+.botonc{
+  background-color: lightcoral;
+  width: 200px;
+  height: 50px;
+  margin-top: -10px;
+  
+ 
+}
+.botonc p:hover{
+  text-decoration: none;
+  height: 50px;
+}
+
+.titleboton{
+  font-size: 30px;
+  font-family: "itim";
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 47px;
+}
+.subrayado:link{
+  text-decoration: none;
+  outline: none;
+}
+.precio{
+  display: flex;
+  justify-content: center;
+}
+.precio p{
+  text-transform: uppercase;
+  height: 100px;
+  font-family: "Luckiest guy";
+  text-align: center;
+  width: 90%;
+}
+/*SINGLE*/
+.ProductName{
+  width: 100%;
+}
+
+.ProductName textarea:first-child{
+  width: 100%;
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 3rem;
+  border-bottom: transparent;
+  text-align: center;
+  border: transparent;
+  line-height: 2.3rem;
+  overflow: hidden;
+}
+.ProductName textarea:nth-child(2){
+  width: 100%;
+  font-family: "quicksand";
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  border: transparent;
+  text-align: center;
+  
+}
+.ProductName input[type=text]{
+  width: 100%;
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 2rem;
+  border-bottom: transparent;
+  text-align: center;
+}
+.contenido{
+  width: 100%;
+  margin: 0px auto;
+}
+.Sopciones select{
+  display: block;
+  margin: 30px auto;
+  border: 2px solid #320b10;
+  width: 70%;
+  height: 40px;
+  font-family: "itim";
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+
+.cantidad{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.cantidad p{
+  padding: 10px;
+  color: white;
+  margin: 5px;
+  font-family: "itim";
+  font-size: 15px;
+}
+.menos,
+.mas{
+ background: #320b10;
+ font-size: 20px;
+ border: none;
+ width: 50px;
+ color: white;
+}
+.menos:hover,
+.mas:hover{
+ cursor: pointer;
+}
+#indi{
+  width: 50px;
+  color: #320b10;
+  border: none;
+  text-align: center;
+}
+#i{
+  width: 20%;
+  height: 20%;
+  margin: 5px auto;
+}
+#cartext{
+  color: #320b10;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+  margin: 10px;
+}
+#cartext p{
+  font-family: "Luckiest guy";
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+.contenedorSingle{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 10%;
+  
+}
+.contenedorSingleR{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+  
+}
+.imagenesSingle{
+  width: 100vw;
+  
+  overflow: hidden;
+}
+.imagenCentral{
+  width: 50vw;
+  height: 48vw;
+}
+.imagenCentral img{
+  width: 100%;
+}
+
+.descripcionSingle{
+
+  width: 50%;
+}
+.frames{
+  
+  display: flex;
+  justify-content: center;
+}
+.frames img{
+  width: 100px;
+  margin: 10px;
+}
+.frames img:hover{
+  cursor: pointer;
+}
+.datos{
+  top:0px;
+}
+.datos p{
+  text-align: center;
+  
+}
+.datos p:first-child{
+  font-family: "quicksand";
+  font-size: 18px;
+}
+.datos p:nth-child(2){
+  font-family: "itim";
+  font-size: 25px;
+  font-weight: bold;
+  color: #320b10;
+}
+.titlec{
+  font-family: "Luckiest guy";
+  font-size: 4rem;
+  color: #320b10;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.contenedorBtnCotizar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.botonCotizar p{
+  font-family: "itim";
+  font-size: 1rem;
+  background-color:#a8656e;
+  color: white;
+  margin-bottom: 0px;
+  width: 250px;
+ padding: 10px;
+ border-radius: 10px;
+  text-align: center;
+}
+.botonCotizar p:hover{
+  background-color: #320b10;
+  cursor: pointer;
+  
+}
+
+/*carrito*/
+.extraCont{
+  display: block;
+  animation: appear .5s ease-in-out;
+}
+.iconoDcerrar{
+  background-color: #320b10;
+  display: block;
+  z-index: 9999999;
+  padding: 10px;
+  position: absolute;
+  margin-left: 10px;
+}
+.iconoDcerrar i{
+  color: white;
+  z-index: 9999999;
+}
+.containerCarrito{
+  width: 40vw;
+  height: auto;
+
+  background-color: white;
+  display: block;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: -20px;
+  z-index: 9999;
+  overflow: scroll;
+
+}
+.containerCarrito p:first-child{
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 10%;
+}
+.tituloM{
+  font-size: 4rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: #5e2129;
+  text-align: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+ 
+}
+.itemsM{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
+  background-color: white;
+
+
+}
+.itemsR{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
+  background-color: white;
+}
+.iconM{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  font-size: 3rem;
+  color: #a33d4b;
+  position: absolute;
+
+  
+}
+.iconM:hover{
+  color: red;
+  cursor:pointer;
+  
+} 
+.conjuntoM{
+
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 30px auto;
+ 
+}
+.conjuntoR{
+
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0px auto;
+}
+.imagenM{
+  width: 250px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imagenM img{
+  width: 100%;
+  margin: 0px;
+}
+.imagenM p{
+  display: block;
+  margin: 5px;
+  font-size: 2rem;
+  position: sticky;
+  margin-top: -10px;
+ 
+}
+.imagenM p:hover{
+  cursor: pointer;
+}
+
+.iconito{
+  position: fixed;
+  left: 20px;
+  display: block;
+  z-index: 9999;
+  background-color: #320b10;
+}
+.botonM{
+  width: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 10px;
+  
+}
+.botonesCorazon{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.btn {
+  margin-top: 0px;
+  border: none; /* Remove borders */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+.formWish{
+  background-color: transparent;
+  height: auto;
+  padding: 0px;
+}
+.botonPares{
+  display: flex;
+  flex-direction: column;
+  line-height: 3px;
+  background-color: white;
+  margin-left: 10px;
+  
+}
+.botonPares b{
+  width: 100%;
+  font-family: "itim";
+  margin: 10px;
+}
+.botonPares p{
+  width: 100%;
+  font-family: "quicksand";
+  margin: 10px;
+}
+.subrayado{
+  text-decoration: none;
+}
+
+.imgP{
+  width: 80px;
+}
+.totalC{
+  width: 100%;
+  margin: 0 auto;
+}
+.totalC p{
+  width: 100%;
+  text-align: center;
+  font-family: "Itim";
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+.totalV{
+  margin-top: 0px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.contaCompra{
+  display: flex;
+  justify-content: center;
+}
+.totalV p{
+  width: 100%;
+  text-align: center;
+  font-family: "Itim";
+  background-color: #a8656e;
+  color: white;
+  padding:10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+ 
+}
+
+.totalV p:hover{
+   background-color: #320b10;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#botonPago{
+  width: 20%;
+  background-color: #a8656e;
+  text-align: center;
+  font-family: "itim";
+  color: white;
+  padding: 5px;
+ margin: 0 auto;
+ margin-top: 10px;
+ border-radius: 10px;
+  
+}
+#botonPago:hover{
+  background-color: #320b10;
+  cursor: pointer;
+}
+.total{
+  font-family: "itim";
+  font-weight: bold;
+  color: #320b10;
+  font-size: 20px;
+}
+.valor{
+  font-weight: bold;
+}
+.cerrari{
+  background-color: red;
+  color: white;
+  margin-top: 5px;
+  border-radius: 50%;
+  
+}
+.cerrari:hover{
+  background-color: #320b10;
+  cursor: pointer;
+}
+.vinculoCarrito{
+  color: white;
+  text-decoration: none;
+}
+
+/*resumen*/
+#fondoResumen{
+  margin: 50px auto;
+  background-color: white;
+  width: 80%;
+ 
+}
+/*DATOS DE LA COMPRA*/
+.size{
+  width:70%;
+  margin: 0 auto;
+}
+.cajas{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  flex-flow: column wrap;
+  
+}
+.datosBasicos{
+
+  width: 100%;
+  margin: 10px;
+}
+.titleD p{
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 2rem;
+  margin-bottom: 0px;
+  text-align: center;
+ 
+}
+form{
+  margin: 20% auto;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+ 
+}
+form input[type=text]{
+  display: flex;
+  flex-flow: column wrap;
+  font-size:22px;
+  display:block;
+  width:80%;
+  height:80%;
+  padding:5px 10px;
+  margin: 10px auto;
+  background-color: transparent;
+  border-bottom:1px solid #320b10;
+  border-top:1px solid transparent;
+  border-right:1px solid transparent;
+  border-left:1px solid transparent;
+  color:#320b10;
+  border-radius:0;
+  transition: border 1s ease;
+  outline: none;
+  font-family: "quicksand";
+}
+input:focus::placeholder {
+  color: transparent;
+}
+form input[type=submit]{
+  display: flex;
+  flex-flow: column wrap;
+  font-size:22px;
+  width:200px;
+  background:#320b10;
+  border:1px solid #320b10;
+  color:white;
+  border-radius:0;
+  margin: 0px auto;
+  text-align: center;
+  font-family: "itim";
+  text-align: center;
+
+}
+::placeholder { color: #320b10; }
+
+
+.totally{
+  width: 70%;
+  margin: 0 auto;
+ 
+}
+.totally p{
+  font-size: 2rem;
+  font-family: "itim";
+  
+}
+.totally b{
+  font-size: 18px;
+  font-family: "itim";
+  color: #320b10;
+  font-weight: bold;
+}
+.volverCarrito img{
+width: 100px;
+position: absolute;
+right: 13%;
+top: 70%;
+}
+
+
+.botonP{
+  background-color: green;
+  width: 100%;
+ margin-top: 10px;
+  
+}
+.botonP p{
+  font-family: "Luckiest guy";
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+/*Agradecimiento*/
+.quitarSubrayado{
+  text-decoration: none;
+}
+.gamanAgradecimiento img{
+  width: 300px;
+  margin: 10px auto;
+}
+.elementos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+h1{
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.ticket{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(190, 110, 110);
+  width: 30%;
+  
+}
+.paresitos2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 3px solid #320b10;
+  margin: 10px;
+  border-radius: 10px;
+  border-style:dashed;
+}
+.paresitos3{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+  
+}
+.paresitos3 p{
+
+  margin-top: 0px;
+  margin-left: 5px;
+  font-family: "quicksand";
+  color: white;
+}
+.paresitos3 b{
+  font-family: "itim";
+  font-size: 18px;
+  color: #320b10;
+}
+.aviso p{
+  font-family: "Luckiest guy";
+  background-color: #320b10;
+  font-size: 2rem;
+  margin-top: 0px;
+  text-align: center;
+  color: white;
+}
+.aviso p:hover{
+  cursor: pointer;
+}
+.volver{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.volver p{
+  background-color: rosybrown;
+  color: white;
+  font-family: "itim";
+  font-size: 2rem;
+  text-align: center;
+  width: 70%;
+  text-decoration: none;
+}
+.volver p:hover{
+  cursor: pointer;
+  background-color: #320b10;
+}
+/*LOGIN///////////////////////////*/
+.agregarCategoria{
+  width: 70%;
+}
+form{
+  width:90%;
+}
+.login{
+  width: 80%;
+  margin: 0 auto;
+}
+.login h1{
+  color: #320b10;
+  font-family: "Luckiest guy";
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px auto;
+}
+input[type=email],
+input[type=password]{
+  width: 100%;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid #320b10;
+  background-color: transparent;
+  padding: 10px;
+  margin: 5px;
+}
+form input[type=text]{
+  width: 100%;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid #320b10;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+ 
+}
+input[type=email]:focus,
+input[type=password]:focus{
+
+  outline: none;
+}
+form input[type=text]:focus{
+
+  outline: none;
+}
+.label{
+  margin-right: 10px;
+  font-family: "quicksand";
+  font-weight: bold;
+}
+.grupo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.grupoC{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.grupo i{
+  position: static;
+  margin: 10px;
+  margin-top: 7px;
+  font-size: 20px;
+  color: #320b10;
+}
+.enviar{
+  display: flex;
+  justify-content: center;
+  background-color: #320b10;
+  color: white;
+  font-family: "itim";
+  margin: 20px auto;
+  border: 1px solid #320b10;
+  border-radius: 5px;
+  padding: 10px;
+}
+.enviar:hover{
+  background-color: #5e2129;
+}
+.registro p{
+ text-align: center;
+ color: black;
+ text-decoration: none;
+ margin-top: 10px;
+}
+/*perfil*/
+.ExtraContenedor{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.contenedorPerfil{
+ 
+ margin: 20% auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+ 
+}
+.fotoPerfil img{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: 15px auto;
+  margin-bottom: 0px;
+}
+.datosBienvenida p:first-child{
+  font-weight: bold;
+  font-family: "itim";
+  font-size: 3rem;
+  text-align: center;
+}
+.datosBienvenida p{
+  display: flex;
+  justify-content: center;
+  font-family: "quicksand";
+  font-size: 1rem;
+}
+
+.datosPerfil{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.datosPerfil p{
+
+  background-color: #a33d4b;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-family: "Luckiest guy";
+  text-align: center;
+}
+/*perfill*/
+.Extradefactura{
+  display: flex;
+  justify-content: center;
+}
+.contenedorFactura{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 20% auto;
+
+}
+.gamanAppear {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.gamanAppear img{
+  width: 100%;
+  margin: 20px auto;
+ right: 0px;
+ display: flex;
+ align-self: center;
+ text-align: center;
+ align-content: center;
+ 
+}
+
+.listFacturas{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.contenedorfacturas{
+ width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+.listFacturas p{
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  font-size: 3vw;
+  background-color: #c284bd;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.listFacturas p:hover{
+  cursor: pointer;
+  background-color: #a33d4b;
+}
+.backNews{
+  background-color: transparent;
+}
+.containerNews{
+  width: 80%;
+  height: auto;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: row;
+  background-color: rosybrown;
+
+  
+}
+.containerNews p{
+  text-align: center;
+  font-family: "Luckiest guy";
+  font-size: 2rem;
+  color: #320b10;
+}
+.formNews input[type=email],
+.formNews input[type=submit]{
+  display: flex;
+  justify-content: center;
+
+}
+.space{
+  margin: 18% auto;
+}
+.cajaone{
+  width: 500px;
+
+}
+.cajatwo{
+  width: 500px;
+ 
+}
+.f{
+  margin: 0 auto;
+}
+.cajatwo img{
+  width: 80%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  
+}
+#cartexto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
+  justify-content: center;
+  margin: 5px auto;
+
+}
+#cartexto p{
+  font-family: "Luckiest guy";
+  font-size: 2rem;
+  color: #320b10;
+  align-self: center;
+}
+#iv{
+  width: 110px;
+}
+
+/*panelll*/
+.contenedorPanel{
+  width: 90%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#opciones{
+  width: 40%;
+  display: none;
+  margin-right: 35px;
+  background-color: white;
+
+
+}
+.vista{
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+}
+.titlePanel{
+  text-align: center;
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+.logoHorizontal{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.logoHorizontal img{
+  width: 100px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#opciones ol{
+  margin-right: 20px;
+}
+#vista h1{
+  margin-bottom: 20px;
+}
+#opciones ol h2{
+  background-color: #a8656e;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  font-family: "itim";
+  color: white;
+  font-size: 1rem;
+}
+#opciones ol h2:hover{
+  cursor: pointer;
+  
+}
+.buscadorD{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#div1{
+  background-color: white;
+  display: none;
+}
+#div1 ul li{
+  color: #320b10;
+  margin: 5px;
+  font-weight: bold;
+}
+#div1 ul {
+  display: flex;
+  flex-direction: column;
+ 
+}
+#div2{
+  background-color: violet;
+  display: none;
+}
+#div2 ul {
+  display: flex;
+  flex-direction: column;
+ 
+}
+#closes{
+  background-color: #320b10;
+  position: absolute;
+  right: 10%;
+}
+#closes i{
+  margin-top: 5px;
+  padding: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#closes i:hover{
+  cursor: pointer;
+}
+.contenidoPanel{
+  width: 60%;
+  margin: 0 auto;
+}
+.containerImagen{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.containerImagen img{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.containerImagen h2{
+  width: 100%;
+  text-align: center;
+  font-family: "itim";
+  color: #320b10;
+}
+.opcionesTop{
+  background-color: rosybrown;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.itemsO{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  
+
+}  
+.itemsO p:first-child{
+  font-family: "itim";
+  margin: 10px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.titleh2{
+  text-align: center;
+  font-family: "itim";
+  color: #320b10;
+}
+.itemsO p:nth-child(2){
+  font-size: 20px;
+  font-family: "itim";
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+/*tabla panle control*/
+.tablaPeluches{
+  width: 700px;
+  margin: 30px auto;
+  overflow-x:auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+.paginacion{
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.disabled{
+  color: grey;
+}
+.paginacion p{
+ margin: 5px;
+ background-color: #320b10;
+ color: white;
+ padding: 10px;
+ 
+}
+.paginacion a{
+  margin: 5px;
+ background-color: #320b10;
+ color: white;
+ padding: 10px;
+}
+.paginacion a:hover{
+  color: white;
+}
+.containerdebuscador{
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 70%;
+}
+.buscadorf{
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+ flex-wrap: wrap;
+ 
+}
+.rincon{
+ width: 80%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin: 10px;
+  
+}
+.buscadorf h2{
+  font-family: "itim";
+  color: #320b10;
+  font-size: 1rem;
+
+}
+.edit{
+  background-color: greenyellow;
+  padding: 10px;
+  color: rgb(5, 49, 5);
+  font-family: "itim";
+}
+.edit:hover{
+  background-color: green;
+  color: white;
+}
+.editarForm{
+  width: 60%;
+}
+.textArea{
+  width: 97%;
+  margin: 0 auto;
+  border-top: transparent;
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #320b10;
+  font-family: "quicksand";
+}
+.textArea:focus{
+  outline: none;
+}
+.contenedorgrupof{
+  margin-bottom: 40px;
+}
+.grupoF{
+  display: flex;
+  justify-content: center;
+}
+#imagenXS:hover{
+  cursor: pointer;
+}
+#contimax{
+  width: 500px;
+  height: 300px;
+}
+#imax{
+  overflow: scroll;
+  width: 100%;
+  height: auto;
+}
+.containerNews{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+background-color: rosybrown
+}
+.containerNews p{
+  text-align: center;
+  font-family: "Luckiest guy";
+  font-size: 2rem;
+  color: #320b10;
+}
+
+ 
+.formNews input[type=email],
+.formNews input[type=submit]{
+  display: flex;
+  justify-content: center;
+
+}
+.space{
+  margin: 18% auto;
+}
+.cajaone{
+  width: 500px;
+
+}
+.cajatwo{
+  width: 500px;
+ 
+}
+.f{
+  margin: 0 auto;
+}
+.cajatwo img{
+  width: 80%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  
+}
+#cartexto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
+  justify-content: center;
+  margin: 5px auto;
+
+}
+#cartexto p{
+  font-family: "Luckiest guy";
+  font-size: 2rem;
+  color: #320b10;
+  align-self: center;
+}
+#iv{
+  width: 110px;
+}
+
+.indicadoresPago{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.indicadoresPago li{
+  background-color: #320b10;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.indicadoresPago li:nth-child(2){
+  background-color: rosybrown;
+  margin: 5px;
+}
+.indicadoresPago p{
+  color: white;
+  padding: 10px;
+ 
+}
+
+
+.indicadoresPago2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -17px;
+}
+.indicadoresPago2 li{
+  background-color: #320b10;
+  margin: 5px;
+ 
+}
+.indicadoresPago2 li:first-child{
+  background-color: rosybrown;
+  margin: 5px;
+}
+.indicadoresPago2 p{
+  color: white;
+  padding: 10px;
+}
+.datosBasicos form{
+  margin-top: 30px;
+}
+@media (max-width: 950px) {
+  .solito{
+    padding: 10%;
+    margin-bottom: -30px;
+  }
+  .containerCarrito{
+    width: 45vw;
+    height: auto;
+  
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: -20px;
+    z-index: 9999;
+    overflow: scroll;
+  
+  }
+  .containerCarrito p:first-child{
+    font-family: "Luckiest guy";
+    color: #320b10;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10%;
+  }
+  .tituloM{
+    font-size: 4rem;
+    font-family: 'Luckiest Guy', cursive;
+    color: #5e2129;
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+   
+  }
+  .itemsM{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px auto;
+    padding-right: 45%;
+   
+  }
+  .contenedorFactura{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 5% auto;
+  
+  }
+  .padreItems{
+    background-color:white;
+    height: 150vw;
+    bottom: 0px;
+    background-attachment: fixed;
+  }
+  .buscadorB{
+
+    width: 100%;
+    margin-bottom: 10%;
+    display: block;
+  }
+  .buscadorB input[type=search]{
+    background-color: green;
+    width: 100%;
+    background-color: rgba(231, 154, 198, 0.254);
+    margin: 0 auto;
+    height: 50px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./recursos/doodle.jpg");
+    background-attachment: fixed;
+  }
+  /*news*/
+  .backNews{
+    background-image: url("./recursos/doodle.jpg");
+    background-attachment: fixed;
+  }
+  .containerNews{
+    width: 80%;
+    height: auto;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    
+  }
+  
+  .f{
+    margin: 0 auto;
+  }
+  .cajatwo img{
+    width: 80%;
+  margin: 10% auto;
+
+    
+  }
+  .editarForm{
+    width: 90%;
+  }
+  .contenedorPanel{
+   width: 100%;
+  
+  }
+/*bienvenida*/
+
+.t{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto
+}
+.s{
+  width:100vw;
+
+
+}
+.carrouselB{
+  width: 100vw;
+}
+.contenedorLogo{
+  width: 100vw;
+ position: block;
+ margin-left: 0px;
+ margin-bottom: 0px;
+ bottom: 0px;
+ background-color: white;
+
+}
+.contenedor-name p{
+  color: #320b10;
+  font-size: 3rem;
+  
+}
+
+.contenedorTexto{
+ display: block;
+ position: sticky;
+ margin-top: 9rem;
+  
+}
+
+.contenedor-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ margin-top: 13px;
+  
+}
+.contenedor-name p{
+  line-height: 1.5rem;
+}
+.contenedor-name p:first-child{
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 4rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+.contenedor-name p:nth-child(2){
+  font-family: "quicksand";
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.contenedor-hojas{
+  display: flex;
+  position: inherit;
+  width: 300px;
+  margin-top: 15px;
+}
+
+.logo{
+  margin: 0 auto;
+ 
+}
+.image{
+  width: 100%;
+  
+}
+
+.advice{
+  display: none;
+}
+.carrouselB{
+  width: 100vw;
+}
+.contenedorWicon{
+  margin-top: -100px;
+  position: absolute;
+}
+.Wicons img{
+  margin-top: 2px;
+}
+.contenedorLogo{
+  width: 60%;
+  margin: 0 auto;
+}
+.contenedorSingle{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 10%;
+  
+}
+.gamanAppear {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.gamanAppear img{
+  width: 90%;
+  margin: 20px auto;
+ right: 0px;
+ 
+}
+
+.listFacturas{
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.contenedorfacturas{
+ width: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+
+}
+
+@media(max-width: 450px){
+  .contaCompra{
+    margin-top: 10px;
+  }
+  .totalV p{
+    width: 100%;
+    text-align: center;
+    font-family: "Itim";
+    background-color: #a8656e;
+    color: white;
+    padding:10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.7rem;
+   
+  }
+  .padreItems{
+    background-color:white;
+    height: 100%;
+    bottom: 0px;
+    background-attachment: fixed;
+  }
+  .buscadorC{
+    display: block;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  input[type=search]{
+   padding: 20px;
+   width: 70%;
+   border-radius: 10px;
+   border: none;
+   background-color: rgba(231, 154, 198, 0.254);
+   
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./recursos/doodle.jpg");
+    background-attachment: fixed;
+  }
+  .backNews{
+    background-image: url("./recursos/doodle.jpg");
+    background-attachment: fixed;
+  }
+  .containerNews{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    
+  }
+  .space p{
+    text-align: center;
+  }
+  
+  .advice{
+    display: block;
+    position: inherit;
+    width: 100vw;
+    height: 200px;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   background-color: rgba(172, 87, 137, 0.254);
+   height: auto;
+   
+  }
+  .advice img{
+    display: none;
+  }
+  .advice p{
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+  .contenedorLogo{
+    width:100vw;
+    margin: 0 auto;
+  }
+  .menu{
+    width: 100vw;
+  }
+  .contenedorLogo{
+    padding-top: 35px;
+    background-color: rosybrown
+  }
+  .contenedorTexto{
+    display: block;
+    position: sticky;
+    margin-top: 10rem;
+     
+   }
+  .editarForm{
+    width: 100%;
+  }
+  .tablaPeluches{
+    width: 80%;
+    margin: 30px auto;
+    overflow-x:auto;
+  }
+  .rincon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+     
+   }
+  
+   .rincon input{
+     width: 100%;
+     margin-left: -35px;
+   }
+  .contenedorSingleR{
+    margin-top: 30%;
+    width: 100%;
+  }
+  .containerServicio{
+    height: 100%;
+    background-color: #e7bcd9;
+
+  }
+  .cajita {
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 0px;
+    width: 100%;
+    margin: 0 auto;
+    
+   
+  }
+  .contenedor-productos{
+    width: 100vw;
+    margin-top: 0%;
+    background-color: white;
+  
+  
+  }
+  
+  .productos{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+  }
+  .contenidoR{
+  margin-top: 0px;
+   
+  }
+  .t{
+    display: block;
+    z-index: 999999;
+  }
+  .boxControls{
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    position: fixed;
+    z-index: 9999999;
+    top:0px;
+  }
+  .contenedorWicon{
+    position: relative;
+    margin-top: 0px;
+    display: block;
+    z-index: 45;
+   
+  }
+  .Wicons{
+     z-index: 99999;
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    justify-content: flex-start;
+  }
+  .Wicons img{
+    background-color: white;
+  }
+  .interLogo{
+    margin-bottom: 0px;
+    margin: 0 auto;
+    bottom: 0px;
+    margin-top: 15%;
+  }
+  .contenidoR{
+    margin-top: -100px;
+  }
+  .cajatwo img{
+    display: none;
+  }
+  .buscadorB{
+    display: none;
+  }
+  .contenedor-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   margin-top: 13px;
+    
+  }
+  .contenedor-name p{
+    line-height: 1.5rem;
+  }
+  .contenedor-name p:first-child{
+    font-family: "Luckiest guy";
+    color: white;
+    font-size: 4rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .contenedor-name p:nth-child(2){
+    font-family: "quicksand";
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .contenedorSingle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 10%;
+    
+  }
+  .ProductName{
+    width: 100%;
+  }
+  
+  .ProductName textarea:first-child{
+    width: 100%;
+    font-family: "Luckiest guy";
+    color: #320b10;
+    font-size: 3rem;
+    border-bottom: transparent;
+    text-align: center;
+    border: transparent;
+    line-height: 2.3rem;
+    overflow: hidden;
+  }
+  .ProductName textarea:nth-child(2){
+    width: 100%;
+    font-family: "quicksand";
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+    border: transparent;
+    text-align: center;
+    
+  }
+  .ProductName input[type=text]{
+    width: 100%;
+    font-family: "Luckiest guy";
+    color: #320b10;
+    font-size: 2rem;
+    border-bottom: transparent;
+    text-align: center;
+  }
+  .containerCarrito{
+    width: 100vw;
+    height: auto;
+   padding-top: 20%;
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: -20px;
+    z-index: 9999;
+    overflow: scroll;
+  
+  }
+  .itemsM{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px auto;
+    padding-right: 0%;
+  }
+  .containerCarrito p:first-child{
+    font-family: "Luckiest guy";
+    color: #320b10;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .descripcionSingle{
+
+    width: 100%;
+  }
+  .contenido{
+    margin-top: 25%;
+  }
+  .contenidoR{
+    margin-top: -7%;
+  }
+ /*panelll*/
+.contenedorPanel{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#opciones{
+  width: 100vw;
+  height: 110%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-right: 0px;
+
+
+}
+.vista{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.titlePanel{
+  text-align: center;
+  font-family: "Luckiest guy";
+  color: #320b10;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+.logoHorizontal{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.logoHorizontal img{
+  width: 100px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#opciones ol{
+  margin-right: 20px;
+}
+#vista h1{
+  margin-bottom: 20px;
+}
+#opciones ol h2{
+  background-color: #a8656e;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  font-family: "itim";
+  color: white;
+  font-size: 1rem;
+}
+#opciones ol h2:hover{
+  cursor: pointer;
+  
+}
+.buscadorD{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#div1{
+  background-color: white;
+  display: none;
+}
+#div1 ul li{
+  color: #320b10;
+  margin: 5px;
+  font-weight: bold;
+}
+#div1 ul {
+  display: flex;
+  flex-direction: column;
+ 
+}
+#div2{
+  background-color: violet;
+  display: none;
+}
+#div2 ul {
+  display: flex;
+  flex-direction: column;
+ 
+}
+#closes{
+  background-color: #320b10;
+  position: absolute;
+  right: 10%;
+  z-index: 9999;
+}
+#closes i{
+  margin-top: 5px;
+  padding: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#closes i:hover{
+  cursor: pointer;
+}
+.contenidoPanel{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerImagen{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.containerImagen img{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.containerImagen h2{
+  width: 100%;
+  text-align: center;
+  font-family: "itim";
+  color: #320b10;
+}
+.opcionesTop{
+  background-color: rosybrown;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.itemsO{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  
+
+}  
+.itemsO p:first-child{
+  font-family: "itim";
+  margin: 10px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.titleh2{
+  text-align: center;
+  font-family: "itim";
+  color: #320b10;
+}
+.itemsO p:nth-child(2){
+  font-size: 20px;
+  font-family: "itim";
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+.contenedorPerfil{
+ 
+  margin: 0 auto;
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: white;
+  
+ }
+ 
+}
+
+@media(max-width: 537px){
+  .cajatwo img{
+    display: none;
+  }
+  
+}
