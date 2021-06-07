@@ -6,12 +6,15 @@ import axios from "axios";
 
 
 export default function DatosCompra() {
+  const objeto = {
+    name: 'Moriarty',
+    price: '40',
+    unit: "3",
+    imag: "imagen.jpg"
+  };
 
   useEffect(()=> {
-    axios.post('https://gamanapp-back.herokuapp.com/payment/new', {
-      name: 'Moriarty',
-      price: 'Sherlock'
-  }).then(response => {
+    axios.post('https://gamanapp-back.herokuapp.com/payment/new', {objeto}).then(response => {
       console.log(response.data)
   }).catch(e => {
       console.log(e);
