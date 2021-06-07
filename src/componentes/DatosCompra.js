@@ -23,15 +23,15 @@ export default function DatosCompra() {
            </li>
        </div>
        <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
-  <input name="merchantId"    type="text"  value="508029"   />
-  <input name="accountId"     type="text"  value="512321" />
+  <input name="merchantId"    type="text"  value="937175"   />
+  <input name="accountId"     type="text"  value="944585" />
   <input name="description"   type="text"  value="Test PAYU"  />
-  <input name="referenceCode" type="text"  value="TestPayU" />
+  <input name="referenceCode" type="text"  value="123" />
   <input name="amount"        type="text"  value="20000"   />
   <input name="tax"           type="text"  value="3193"  />
   <input name="taxReturnBase" type="text"  value="16806" />
   <input name="currency"      type="text"  value="COP" />
-  <input name="signature"     type="text"  value="7ee7cf808ce6a39b17481c54f2c57acc"  />
+  <input name="signature"     type="text"  value="2a7c2ec088957925669d9de4474826ed"  />
   <input name="test"          type="text"  value="0" />
   <input name="buyerEmail"    type="text"  value="test@test.com" />
   <input name="responseUrl"    type="text"  value="http://www.test.com/response" />
