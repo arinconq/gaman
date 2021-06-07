@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gaman/static/css/main.f3358fb4.chunk.css",
-    "main.js": "/gaman/static/js/main.df31d81f.chunk.js",
-    "main.js.map": "/gaman/static/js/main.df31d81f.chunk.js.map",
+    "main.js": "/gaman/static/js/main.92442c2e.chunk.js",
+    "main.js.map": "/gaman/static/js/main.92442c2e.chunk.js.map",
     "runtime-main.js": "/gaman/static/js/runtime-main.8fbc1ba4.js",
     "runtime-main.js.map": "/gaman/static/js/runtime-main.8fbc1ba4.js.map",
     "static/css/2.cd3d722d.chunk.css": "/gaman/static/css/2.cd3d722d.chunk.css",
@@ -47,6 +47,6 @@
     "static/css/2.cd3d722d.chunk.css",
     "static/js/2.0271ef91.chunk.js",
     "static/css/main.f3358fb4.chunk.css",
-    "static/js/main.df31d81f.chunk.js"
+    "static/js/main.92442c2e.chunk.js"
   ]
 }
