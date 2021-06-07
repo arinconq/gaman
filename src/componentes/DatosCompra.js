@@ -12,7 +12,7 @@ export default function DatosCompra() {
       name: 'Moriarty',
       price: 'Sherlock'
   }).then(response => {
-      console.log(response)
+      console.log(response.data)
   }).catch(e => {
       console.log(e);
   });
