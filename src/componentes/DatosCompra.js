@@ -6,26 +6,24 @@ import axios from "axios";
 
 
 export default function DatosCompra() {
-  const objeto = {
+  var orderData = {
     name: 'Moriarty',
     price: '40',
     unit: "3",
     imag: "imagen.jpg"
   };
+    
+  axios.post("https://gamanapp-back.herokuapp.com/payment/new", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify(orderData),
+    })
+      .then(function(response) {
+          return response.json();
+      })
  
-  useEffect(()=> {
-    axios.post('https://gamanapp-back.herokuapp.com/payment/new', {objeto}).then(response => {
-      console.log(response.data)
-  }).catch(e => {
-      console.log(e);
-  });
-  axios.get('https://gamanapp-back.herokuapp.com/prueba', 
-  ).then(response => {
-      console.log(response.data)
-  }).catch(e => {
-      console.log(e);
-  });
-  },[])
   return (
     <div className="fondoResumen">
        
