@@ -16,6 +16,12 @@ export default function DatosCompra() {
   }).catch(e => {
       console.log(e);
   });
+  axios.get('https://gamanapp-back.herokuapp.com/prueba', 
+  ).then(response => {
+      console.log(response.data)
+  }).catch(e => {
+      console.log(e);
+  });
   },[])
   return (
     <div className="fondoResumen">
