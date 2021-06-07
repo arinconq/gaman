@@ -13,23 +13,13 @@ export default function DatosCompra() {
     imag: "imagen.jpg"
   };
     
-  axios.post("https://gamanapp-back.herokuapp.com/payment/new", {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json",
-          },
-          body: JSON.stringify(orderData),
-    })
-      .then(function(response) {
-          return response.json();
-      })
  
   return (
     <div className="fondoResumen">
        
       <div className="cajas">
         <div className="datosBasicos">
-          <form>
+          {/*<form>
           <div className="indicadoresPago2">
            <li>
                <p>1. Resumen Compra</p>
@@ -61,14 +51,31 @@ export default function DatosCompra() {
           <Link to="/ResumenCompra">
           <input type="submit" value="PAGAR" />
           </Link>
-          </form>
+          </form>*/}
         </div>
+        
+ <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+  <input name="merchantId"    type="hidden"  value="508029"   />
+  <input name="accountId"     type="hidden"  value="512321" />
+  <input name="description"   type="hidden"  value="Test PAYU"  />
+  <input name="referenceCode" type="hidden"  value="TestPayU" />
+  <input name="amount"        type="hidden"  value="20000"   />
+  <input name="tax"           type="hidden"  value="3193"  />
+  <input name="taxReturnBase" type="hidden"  value="16806" />
+  <input name="currency"      type="hidden"  value="COP" />
+  <input name="signature"     type="hidden"  value="7ee7cf808ce6a39b17481c54f2c57acc"  />
+  <input name="test"          type="hidden"  value="0" />
+  <input name="buyerEmail"    type="hidden"  value="test@test.com" />
+  <input name="responseUrl"    type="hidden"  value="http://www.test.com/response" />
+  <input name="confirmationUrl"    type="hidden"  value="http://www.test.com/confirmation" />
+  <input name="Submit"        type="submit"  value="Enviar" />
+</form>
 
      
            
            
                
-        </div>
+          </div>
       </div>
 
      
