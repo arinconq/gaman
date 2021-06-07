@@ -15,7 +15,7 @@ export default function DatosCompra() {
 
   useEffect(()=> {
     axios.post('https://gamanapp-back.herokuapp.com/payment/new', {objeto}).then(response => {
-      console.log(response.data)
+      console.log("response de datoscompra"+response.data)
   }).catch(e => {
       console.log(e);
   });
