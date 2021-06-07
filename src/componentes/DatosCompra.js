@@ -22,6 +22,22 @@ export default function DatosCompra() {
                <p >2. Datos Cliente</p>
            </li>
        </div>
+       <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+  <input name="merchantId"    type="text"  value="508029"   />
+  <input name="accountId"     type="text"  value="512321" />
+  <input name="description"   type="text"  value="Test PAYU"  />
+  <input name="referenceCode" type="text"  value="TestPayU" />
+  <input name="amount"        type="text"  value="20000"   />
+  <input name="tax"           type="text"  value="3193"  />
+  <input name="taxReturnBase" type="text"  value="16806" />
+  <input name="currency"      type="text"  value="COP" />
+  <input name="signature"     type="text"  value="7ee7cf808ce6a39b17481c54f2c57acc"  />
+  <input name="test"          type="text"  value="0" />
+  <input name="buyerEmail"    type="text"  value="test@test.com" />
+  <input name="responseUrl"    type="text"  value="http://www.test.com/response" />
+  <input name="confirmationUrl"    type="text"  value="http://www.test.com/confirmation" />
+  <input name="Submit"        type="submit"  value="Enviar" />
+</form>
           <div className="titleD">
         <p>DATOS DE LA COMPRA</p>
       </div>
@@ -46,22 +62,7 @@ export default function DatosCompra() {
           <input type="submit" value="PAGAR" />
           </Link>
           </form>
-          <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
-  <input name="merchantId"    type="hidden"  value="508029"   />
-  <input name="accountId"     type="hidden"  value="512321" />
-  <input name="description"   type="hidden"  value="Test PAYU"  />
-  <input name="referenceCode" type="hidden"  value="TestPayU" />
-  <input name="amount"        type="hidden"  value="20000"   />
-  <input name="tax"           type="hidden"  value="3193"  />
-  <input name="taxReturnBase" type="hidden"  value="16806" />
-  <input name="currency"      type="hidden"  value="COP" />
-  <input name="signature"     type="hidden"  value="7ee7cf808ce6a39b17481c54f2c57acc"  />
-  <input name="test"          type="hidden"  value="0" />
-  <input name="buyerEmail"    type="hidden"  value="test@test.com" />
-  <input name="responseUrl"    type="hidden"  value="http://www.test.com/response" />
-  <input name="confirmationUrl"    type="hidden"  value="http://www.test.com/confirmation" />
-  <input name="Submit"        type="submit"  value="Enviar" />
-</form>
+         
  
         </div>
 
