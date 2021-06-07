@@ -12,10 +12,10 @@ export default function DatosCompra() {
     unit: "3",
     imag: "imagen.jpg"
   };
-
+ 
   useEffect(()=> {
     axios.post('https://gamanapp-back.herokuapp.com/payment/new', {objeto}).then(response => {
-      console.log("response de datoscompra"+response.data)
+      console.log(response.data)
   }).catch(e => {
       console.log(e);
   });
